@@ -35,51 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
     <!-- header -->
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <h1><a class="navbar-brand" href="index.php">Recruit
-
-                    </a></h1>
-                <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="ml-lg-5 navbar-nav mr-lg-auto">
-                        <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-                            <a href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-                            <a href="about.html">about</a>
-                        </li>
-                        <li class="nav-item dropdown mr-lg-4 my-lg-0 my-sm-4 my-3  active ">
-                            <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Pages
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="job_list.html">Job List</a>
-                                <a href="job_single.html">Job Single</a>
-                            </div>
-                        </li>
-                        <li class="nav-item mr-lg-4 my-lg-0 mb-sm-4 mb-3">
-                            <a href="contact.html">contact</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn w3ls-btn text-uppercase font-weight-bold d-block" data-toggle="modal"
-                        aria-pressed="false" data-target="#exampleModal1">
-                        Register
-                    </button>
-                    <button type="button" class="btn w3ls-btn btn-2 ml-lg-1 text-uppercase font-weight-bold d-block"
-                        data-toggle="modal" aria-pressed="false" data-target="#exampleModal">
-                        Sign in
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <?php require "partial/headerFrontend.view.php"?>
     <!-- //header -->
     <div class="inner-banner-w3ls">
     </div>
@@ -90,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <a href="index.php" class="text-white">Home</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="job_list.html" class="text-white">Job List</a>
+                <a href="job_list.php" class="text-white">Job List</a>
             </li>
             <li class="breadcrumb-item active text-white font-weight-bold" aria-current="page">Job Single</li>
         </ol>
@@ -213,19 +169,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <span class="fa fa-play"></span>Home</a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="about.php">
                                 <span class="fa fa-play"></span>About</a>
                         </li>
                         <li>
-                            <a href="job_list.html">
+                            <a href="job_list.php">
                                 <span class="fa fa-play"></span>Job List</a>
                         </li>
                         <li>
-                            <a href="job_single.html">
+                            <a href="job_single.php">
                                 <span class="fa fa-play"></span>Job Single</a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="contact.php">
                                 <span class="fa fa-play"></span>Contact</a>
                         </li>
                     </ul>
@@ -239,19 +195,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <span class="fa fa-play"></span>Home</a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="about.php">
                                 <span class="fa fa-play"></span>About</a>
                         </li>
                         <li>
-                            <a href="job_list.html">
+                            <a href="job_list.php">
                                 <span class="fa fa-play"></span>Job List</a>
                         </li>
                         <li>
-                            <a href="job_single.html">
+                            <a href="job_single.php">
                                 <span class="fa fa-play"></span>Job Single</a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="contact.php">
                                 <span class="fa fa-play"></span>Contact</a>
                         </li>
                     </ul>
