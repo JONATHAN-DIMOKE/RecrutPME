@@ -92,12 +92,12 @@ body a:focus {
 }
 
 .bg-theme {
-	background: #0d2865 !important;
-	color: #fff;
+	background: #c69500 !important;
+	color: #000000;
 }
 
 .bg-theme1 {
-	background: #41d8d1 !important;
+	background: #c69500 !important;
 	color: #0d2865;
 }
 
@@ -108,11 +108,11 @@ body a:focus {
 
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover {
-	color: #fff;
+	color: #000000;
 }
 
 .navbar-brand {
-	color: #fff;
+	color: #000000;
 	font-size: 25px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -134,7 +134,7 @@ body a:focus {
 }
 
 .btn-2 {
-	border-left: 1px solid #fff
+	border-left: 1px solid #000000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -152,7 +152,7 @@ body a:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
 	color: #6887ff;
-	background: #fff;
+	background: #000000;
 	border-radius: 5px;
 }
 
@@ -188,7 +188,7 @@ ul.d-flex.header-w3ltd {
 }
 
 li.nav-item a {
-	color: #fff;
+	color: #000000;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -206,7 +206,7 @@ li.nav-item.active a {
 
 header {
 	padding: 10px 0;
-	background: rgba(65, 216, 209, 0.82);
+	background: #c69500;
 	width: 100%;
 	position: absolute;
 	z-index: 9;
