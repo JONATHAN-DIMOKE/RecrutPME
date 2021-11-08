@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-    <title>Recruit HR Management Category Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <title>Recruit HR Management Category Flat Bootstrap Responsive website Template | About :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="Recruit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -34,94 +34,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-    <!-- Slider -->
-    <div class="w3-banner-info-w3ltd position-relative">
-        <!-- header -->
-       <?php require "partial/headerFrontend.view.php"?>
-        <!-- //header -->
-        <div class="slider">
-            <ul class="rslides" id="slider">
-                <li>
-                    <div class="d-flex banner-w3pvt-bg1 common-bg">
-                        <div class="d-flex mx-auto align-items-center justify-content-center flex-column">
-                            <div class="bnr-w3pvt">
-                                <h3>CE recruitment</h3>
-                                <div class="d-flex justify-content-between bnr-sub-txt align-items-center">
-                                    <span></span>
-                                    <p class="text-uppercase text-white">Join our teams</p>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex banner-w3pvt-bg2 common-bg">
-                        <div class="d-flex mx-auto align-items-center justify-content-center flex-column">
-                            <div class="bnr-w3pvt">
-                                <h3>CE rectruitment</h3>
-                                <div class="d-flex justify-content-between bnr-sub-txt align-items-center">
-                                    <span></span>
-                                    <p class="text-uppercase text-white">Join our teams</p>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex banner-w3pvt-bg3 common-bg">
-                        <div class="d-flex mx-auto align-items-center justify-content-center flex-column">
-                            <div class="bnr-w3pvt">
-                                <h3>CE recruitment</h3>
-                                <div class="d-flex justify-content-between bnr-sub-txt align-items-center">
-                                    <span></span>
-                                    <p class="text-uppercase text-white">Join our teams</p>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <!-- header -->
+    <?php require "partial/headerFrontend.view.php"?>
+    <!-- //header -->
+    <div class="inner-banner-w3ls">
     </div>
-    <!-- //Slider -->
-    <!--partners  -->
-    <div class="w3ltdits-partners bg-theme" id="partners">
-        <div class="container pt-4">
-            <div class="title-wthree text-center">
-                <h3 class="w3ltd-title">
-                    find the one that’s right for you.
-                </h3>
-                <span></span>
-            </div>
-            <ul class="list-unstyled py-md-5 py-3 partners-icon text-center">
-                <li>
-                    <span class="fa fa-lastfm-square" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <span class="fa fa-meanpath" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <span class="fa fa-behance-square" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <span class="fa fa-cc-discover" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <span class="fa fa-cc-stripe" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <span class="fa fa-cc-jcb" aria-hidden="true"></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- //partners -->
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex justify-content-center bg-theme">
+            <li class="breadcrumb-item">
+                <a href="index.php" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white font-weight-bold" aria-current="page">About Us</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
     <!-- about -->
     <section class="about-wthree py-3">
         <div class="container  py-sm-5">
@@ -590,20 +517,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //register modal -->
     <!-- js -->
     <script src="js/jquery-2.2.3.min.js"></script>
-    <!-- Slider-JavaScript -->
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-        $(function () {
-            $("#slider, #slider1").responsiveSlides({
-                auto: true,
-                nav: false,
-                speed: 1500,
-                namespace: "callbacks",
-                pager: true,
-            });
-        });
-    </script>
-    <!-- //Slider-JavaScript -->
     <!-- script for password match -->
     <script>
         window.onload = function () {
