@@ -16,6 +16,8 @@ function connectUser($username, $pwd){
             session_start();
             $_SESSION['user'] = $resultDB;
             echo $_SESSION['user']['username']." 's connected";
+        }else{
+            echo "Error de connection";
         }
     }catch (Exception $ex){
         errorManage($ex);
