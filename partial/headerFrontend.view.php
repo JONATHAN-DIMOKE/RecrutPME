@@ -1,9 +1,9 @@
 <header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <h1><a class="navbar-brand" href="index.php">Congo Equipment
+            <a class="navbar-brand" href="index.php"><img src="images/logo.png" style="padding-right: 100px" width="400px" alt="">
 
-                </a></h1>
+                </a>
             <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">

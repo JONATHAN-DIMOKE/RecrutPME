@@ -505,15 +505,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="post" class="p-3">
+                    <form action="dispatcher.php?action=connectUser" method="post" class="p-3">
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Username</label>
-                            <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-name"
+                            <input type="text" class="form-control" placeholder=" " name="username" id="recipient-name"
                                 required="">
                         </div>
                         <div class="form-group">
                             <label for="password" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" placeholder=" " name="Password" id="password"
+                            <input type="password" class="form-control" placeholder=" " name="pwd" id="password"
                                 required="">
                         </div>
                         <div class="right-w3l">

@@ -15,7 +15,12 @@ function connectUser($username, $pwd){
         if($resultDB['username']){
             session_start();
             $_SESSION['user'] = $resultDB;
-            echo $_SESSION['user']['username']." 's connected";
+            /*echo "<pre>";
+                print_r($_SESSION['user']);
+            echo "</pre>"; */
+            require "view/backend/index.php";
+        }else{
+            require "view/frontend/index.php";
         }
     }catch (Exception $ex){
         errorManage($ex);
