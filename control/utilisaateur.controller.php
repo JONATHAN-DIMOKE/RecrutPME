@@ -26,3 +26,12 @@ function connectUser($username, $pwd){
         errorManage($ex);
     }
 }
+
+function disconnectUser($id){
+    try{
+        UtilisateurDAO::disconnectUser($_GET['id']);
+        require "view/frontend/index.php";
+    }catch (Exception $ex){
+        errorManage($ex);
+    }
+}

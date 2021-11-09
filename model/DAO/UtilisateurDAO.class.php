@@ -21,4 +21,15 @@ class UtilisateurDAO
             errorManage($ex);
         }
     }
+
+    public static function disconnectUser($id){
+        try{
+            $query = "CALL proc_disconnect(?)";
+            $queryPrepare = ConnectionDAO::getConnexion()->prepare($query);
+            $queryPrepare->execute(array($id));
+            $queryPrepare->closeCursor();
+        }catch (Exception $ex){
+            errorManage($ex);
+        }
+    }
 }

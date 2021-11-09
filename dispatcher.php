@@ -21,6 +21,8 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
         job_single();
     }elseif($_GET['action'] == "connectUser"){
         connectUser(htmlspecialchars($_POST['username']), htmlspecialchars($_POST['pwd']));
+    }elseif ($_GET['action'] == "disconnect"){
+        disconnectUser(htmlspecialchars($_GET['id']));
     }
 }else{
     accueil();
