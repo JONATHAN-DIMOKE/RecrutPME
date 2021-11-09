@@ -6,17 +6,17 @@
  * Time: 18:17
  */
 function accueil(){
-    require "view/index.php";
+    require "view/frontend/index.php";
 }
 function about(){
-    require "view/about.php";
+    require "view/frontend/about.php";
 }
 function contact(){
-    require "view/contact.php";
+    require "view/frontend/contact.php";
 }
 function job_list(){
-    require "view/job_list.php";
+    require "view/frontend/job_list.php";
 }
 function job_single(){
-    require "view/job_single.php";
+    require "view/frontend/job_single.php";
 }

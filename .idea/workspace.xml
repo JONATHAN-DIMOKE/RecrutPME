@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9561204d-3398-40b2-85eb-9b60a597da45" name="Default" comment="" />
+    <list default="true" id="9561204d-3398-40b2-85eb-9b60a597da45" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control/utilisaateur.controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partial/errorManage.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partial/footerFrontend.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/DAO/UtilisateurDAO.class.php" afterPath="$PROJECT_DIR$/model/DAO/UtilisateurDAO.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/entities/Candidature.class.php" afterPath="$PROJECT_DIR$/model/entities/Candidature.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/entities/Offre.class.php" afterPath="$PROJECT_DIR$/model/entities/Offre.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/entities/Test.class.php" afterPath="$PROJECT_DIR$/model/entities/Test.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/entities/Utilisateur.class.php" afterPath="$PROJECT_DIR$/model/entities/Utilisateur.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/about.php" afterPath="$PROJECT_DIR$/view/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/contact.php" afterPath="$PROJECT_DIR$/view/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/index.php" afterPath="$PROJECT_DIR$/view/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/job_list.php" afterPath="$PROJECT_DIR$/view/job_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/job_single.php" afterPath="$PROJECT_DIR$/view/job_single.php" />
+>>>>>>> chef_dep
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,21 +83,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilisaateur.controller.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="utilisaateur.controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control/utilisaateur.controller.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="595">
               <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="63" />
+=======
+            <state relative-caret-position="282">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+>>>>>>> configuration
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dispatcher.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dispatcher.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dispatcher.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="260">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="18" />
+=======
             <state relative-caret-position="120">
+<<<<<<< HEAD
               <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+=======
+<<<<<<< HEAD
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+=======
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+>>>>>>> master
+>>>>>>> chef_dep
+>>>>>>> configuration
               <folding />
             </state>
           </provider>
@@ -293,8 +330,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,18 +436,38 @@
       <workItem from="1635956402531" duration="6045000" />
       <workItem from="1636016007215" duration="1923000" />
       <workItem from="1636041305592" duration="48000" />
+<<<<<<< HEAD
       <workItem from="1636394779728" duration="13000" />
       <workItem from="1636394886637" duration="2000" />
+=======
+      <workItem from="1636388616107" duration="56000" />
+>>>>>>> configuration
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="18402000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="18443000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="18129000" />
+=======
+    <option name="totallyTimeSpent" value="18387000" />
+>>>>>>> master
+>>>>>>> chef_dep
+>>>>>>> configuration
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> configuration
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -815,18 +872,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/utilisaateur.controller.php">
+    <entry file="file://$PROJECT_DIR$/dispatcher.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="595">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="63" />
+=======
+        <state relative-caret-position="120">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+>>>>>>> configuration
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispatcher.php">
+    <entry file="file://$PROJECT_DIR$/control/utilisaateur.controller.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="282">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="260">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="18" />
+=======
         <state relative-caret-position="120">
+<<<<<<< HEAD
           <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+=======
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+>>>>>>> master
+>>>>>>> chef_dep
+>>>>>>> configuration
           <folding />
         </state>
       </provider>

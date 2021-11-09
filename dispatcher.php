@@ -6,6 +6,7 @@
  * Time: 18:04
  */
 require "control/lancerFrontend.controller.php";
+require "control/utilisaateur.controller.php";
 
 if(isset($_GET['action']) && !empty($_GET['action'])){
     if($_GET['action'] == "accueil"){
@@ -18,6 +19,8 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
         job_list();
     }elseif ($_GET['action'] == "job_single"){
         job_single();
+    }elseif($_GET['action'] == "connectUser"){
+        connectUser(htmlspecialchars($_POST['username']), htmlspecialchars($_POST['pwd']));
     }
 }else{
     accueil();
