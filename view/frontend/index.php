@@ -545,7 +545,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-theme1">
-                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Create account</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -553,24 +553,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body">
                     <form action="#" method="post" class="p-3">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Username</label>
-                            <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-rname"
+                            <label for="recipient-name" class="col-form-label">Nom complet</label>
+                            <input type="text" class="form-control" placeholder=" " name="nomComplet" id="nomComplet"
                                 required="">
                         </div>
                         <div class="form-group">
-                            <label for="recipient-email" class="col-form-label">Email</label>
-                            <input type="email" class="form-control" placeholder=" " name="Email" id="recipient-email"
+                            <label for="recipient-name" class="col-form-label">Genre</label>
+                            <select name="genre" id="genre" class="form-control">
+                                <option value="M">Homme</option>
+                                <option value="F">Femme</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-email" class="col-form-label">Telephone</label>
+                            <input type="text" class="form-control" placeholder="" name="tel" id="tel"
                                 required="">
                         </div>
                         <div class="form-group">
-                            <label for="password1" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" placeholder=" " name="Password" id="password1"
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="text" class="form-control" placeholder=" " name="email" id="email"
                                 required="">
                         </div>
                         <div class="form-group">
-                            <label for="password2" class="col-form-label">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2"
+                            <label for="usename" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder=" " name="username" id="usename"
                                 required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" class="col-form-label">Mot de passe</label>
+                            <input type="text" class="form-control" placeholder=" " name="pwd" id="pwd"
+                                   required="">
                         </div>
                         <div class="sub-w3l">
                             <div class="sub-w3ltd">
@@ -580,7 +592,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div>
                         <div class="right-w3l">
-                            <input type="submit" class="form-control bg-theme" value="Register">
+                            <input type="button"id="btnCreateAccount" class="form-control bg-theme" value="Register">
                         </div>
                     </form>
                 </div>
