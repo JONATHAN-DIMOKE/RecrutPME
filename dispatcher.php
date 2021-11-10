@@ -28,6 +28,9 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
     }elseif ($_GET['action'] == "disconnect"){
         disconnectUser(htmlspecialchars($_GET['id']));
     }
+    elseif($_GET['action'] == "createUser"){
+        createAccountCandidiat($_POST['nomComplet'], $_POST['genre'], $_POST['tel'], $_POST['email'], $_POST['username'], $_POST['pwd']);
+    }
 }else{
     accueil();
 }

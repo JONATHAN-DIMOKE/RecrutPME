@@ -32,4 +32,25 @@ class UtilisateurDAO
             errorManage($ex);
         }
     }
+
+    public static function createAccout(Utilisateur $utilisateur){
+        try{
+            $query = "CALL proc_createAccount(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $queryPrepare = ConnectionDAO::getConnexion()->prepare($query);
+            $queryPrepare->execute(array(
+                $utilisateur->getMatricule(),
+                $utilisateur->getNomComplet(),
+                $utilisateur->getGenre(),
+                $utilisateur->getTel(),
+                $utilisateur->getEmail(),
+                $utilisateur->getFonction(),
+                $utilisateur->getTypeUser(),
+                $utilisateur->getUsername(),
+                $utilisateur->getPwd()
+            ));
+
+        }catch (Exception $ex){
+            errorManage($ex);
+        }
+    }
 }

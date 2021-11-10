@@ -551,7 +551,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="post" class="p-3">
+                    <form action="dispatcher.php?action=createUser" method="post" class="p-3">
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Nom complet</label>
                             <input type="text" class="form-control" placeholder=" " name="nomComplet" id="nomComplet"
@@ -581,7 +581,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="form-group">
                             <label for="pwd" class="col-form-label">Mot de passe</label>
-                            <input type="text" class="form-control" placeholder=" " name="pwd" id="pwd"
+                            <input type="password" class="form-control" placeholder=" " name="pwd" id="pwd"
                                    required="">
                         </div>
                         <div class="sub-w3l">
@@ -592,7 +592,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div>
                         <div class="right-w3l">
-                            <input type="button"id="btnCreateAccount" class="form-control bg-theme" value="Register">
+                            <input type="submit"id="btnCreateAccount" class="form-control bg-theme" value="Register">
                         </div>
                     </form>
                 </div>
