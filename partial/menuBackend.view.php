@@ -144,10 +144,10 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                     <a class="active" href="index.php">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
-                    </a>s
+                    </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="javascript:;">
+                    <a href="dispatcher.php?action=soumettreBesoin">
                         <i class="fa fa-envelope"></i>
                         <span>Soumettre besoin en RH</span>
                     </a>

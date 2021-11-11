@@ -16,6 +16,7 @@ class Candidature
     private $idCandidat;
     private $idOffre;
     private $dateCandidature;
+    private $cvCandidat;
 
     /**
      * Candidature constructor.
@@ -27,8 +28,9 @@ class Candidature
      * @param $idCandidat
      * @param $idOffre
      * @param $dateCandidature
+     * @param $cvCandidat
      */
-    public function __construct($id, $numOffre, $dateOffre, $etatOffre, $fileOffre, $idCandidat, $idOffre, $dateCandidature)
+    public function __construct($id, $numOffre, $dateOffre, $etatOffre, $fileOffre, $idCandidat, $idOffre, $dateCandidature, $cvCandidat)
     {
         $this->id = $id;
         $this->numOffre = $numOffre;
@@ -38,7 +40,25 @@ class Candidature
         $this->idCandidat = $idCandidat;
         $this->idOffre = $idOffre;
         $this->dateCandidature = $dateCandidature;
+        $this->cvCandidat = $cvCandidat;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCvCandidat()
+    {
+        return $this->cvCandidat;
+    }
+
+    /**
+     * @param mixed $cvCandidat
+     */
+    public function setCvCandidat($cvCandidat)
+    {
+        $this->cvCandidat = $cvCandidat;
+    }
+
 
     /**
      * @return mixed
