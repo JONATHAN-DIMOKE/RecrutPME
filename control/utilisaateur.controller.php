@@ -53,6 +53,7 @@ function createAccountCandidiat($nomComplet, $genre, $tel, $email, $username, $p
 /* controllers of department chief */
 function showPageExprimerBesoin(){
     try{
+        $listBesoins = OffreDAO::getAllBesoin();
         require "view/backend/soumettreBesoin.view.php";
     }catch (Exception $ex){
         errorManage($ex);

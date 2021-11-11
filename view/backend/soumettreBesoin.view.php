@@ -83,7 +83,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             </tr>
                                             </thead>
                                             <tbody>
-
+                                                <?php
+                                                $compteur = 1;
+                                                    foreach ($listBesoins as $besoin){
+                                                        echo "<tr>";
+                                                            echo "<td>".$compteur."</td>";
+                                                            echo "<td>".$besoin['titreExpression']."</td>";
+                                                            echo "<td>".$besoin['fileExprBesoin']."</td>";
+                                                            $compteur++;
+                                                        echo "</tr>";
+                                                    }
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>

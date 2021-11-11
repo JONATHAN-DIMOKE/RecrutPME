@@ -13,8 +13,11 @@ require_once "model/DAO/OffreDAO.class.php";
 function createBesoin($titreBesoin, $fileExprBesoin, $idChefDep){
     try{
         OffreDAO::createBesoin($titreBesoin, $fileExprBesoin, $idChefDep);
+        $listBesoins = OffreDAO::getAllBesoin();
         require "view/backend/soumettreBesoin.view.php";
     }catch (Exception $ex){
         errorManage($ex);
     }
 }
+
+
