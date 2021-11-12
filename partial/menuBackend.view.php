@@ -107,7 +107,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                     </a>
                 </li>
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="dispatcher.php?action=publierOffre">
                         <i class="fa fa-bullhorn"></i>
                         <span>Publier offre </span>
                     </a>
@@ -153,6 +153,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                     </a>
         
                 </li>
+                
                
             </ul>            </div>
         <!-- sidebar menu end-->

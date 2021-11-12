@@ -59,3 +59,11 @@ function showPageExprimerBesoin(){
         errorManage($ex);
     }
 }
+
+function showPagePublierOffre(){
+    try{
+        require "view/backend/publierOffre.view.php";
+    } catch (Exception $ex){
+        errorManage($ex);
+    }
+}

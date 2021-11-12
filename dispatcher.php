@@ -30,6 +30,8 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
         createAccountCandidiat($_POST['nomComplet'], $_POST['genre'], $_POST['tel'], $_POST['email'], $_POST['username'], $_POST['pwd']);
     }elseif ($_GET['action'] == "soumettreBesoin"){
         showPageExprimerBesoin();
+    }elseif ($_GET['action'] == "publierOffre") {
+        showPagePublierOffre();
     }elseif ($_GET['action'] == "saveBesoin"){
         $repertoireDestination = "exprBesoin/";
         $fileExprimerBesoin= date("YmdHis")." - ".$_FILES["fileExprBesoin"]["name"];
