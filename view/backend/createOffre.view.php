@@ -52,28 +52,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </header>
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-5">
                                         <div>
-                                            <form enctype="multipart/form-data" method="post" action="dispatcher.php?action=saveBesoin">
+                                            <h4><legend>Creer une offre</legend></h4>
+                                            <form enctype="multipart/form-data" method="post" action="dispatcher.php?action=createOffre">
                                                 <div class="row">
                                                     <input type="hidden" value="<?= $_SESSION['user']['id']?>" name="id" required="" readonly>
-                                                            <div class="col-lg-4">
-                                                            <input type="text" name="titreExpression" placeholder="Titre poste" class="form-control">
-                                                        </div>
-                                                    <input type="hidden" name="MAX_FILE_SIZE" value="50000000000" />
-                                                        <div class="col-lg-4">
-                                                            <input type="file" name="fileExprBesoin" class="form-control">
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <button class="btn btn-primary" type="submit">Valider besoin</button>
-                                                        </div>
+                                                    <div class="col-lg-12">
+                                                        <input type="text" name="titreExpression" readonly value="<?= $_GET['titreOffre']?>" class="form-control">
                                                     </div>
+                                                </div><br>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <input type="date" name="dateFin" placeholder="Titre poste" class="form-control">
+                                                    </div>
+                                                </div><br>
+                                                <div class="row">
+                                                    <input type="hidden" name="MAX_FILE_SIZE" value="50000000000" />
+                                                    <div class="col-lg-12">
+                                                        <input type="file" name="fileOffre" class="form-control">
+                                                    </div>
+                                                </div><br>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <button class="btn btn-success col-md-12" type="submit">Creer offre</button>
+                                                    </div>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row" style="padding-top: 10px">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7">
                                         <table class="table table-bordered" id="myTable">
                                             <thead>
                                             <tr>
@@ -83,17 +91,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                <?php
-                                                $compteur = 1;
-                                                    foreach ($listBesoins as $besoin){
-                                                        echo "<tr>";
-                                                            echo "<td>".$compteur."</td>";
-                                                            echo "<td>".$besoin['titreExpression']."</td>";
-                                                            echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
-                                                            $compteur++;
-                                                        echo "</tr>";
-                                                    }
-                                                ?>
+                                            <?php
+                                            $compteur = 1;
+                                            foreach ($listBesoins as $besoin){
+                                                echo "<tr>";
+                                                echo "<td>".$compteur."</td>";
+                                                echo "<td>".$besoin['titreExpression']."</td>";
+                                                echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
+                                                $compteur++;
+                                                echo "</tr>";
+                                            }
+                                            ?>
                                             </tbody>
                                         </table>
                                     </div>

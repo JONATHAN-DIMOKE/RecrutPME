@@ -53,4 +53,17 @@ class UtilisateurDAO
             errorManage($ex);
         }
     }
+
+    public static function getAllUser(){
+        try{
+            $query = "CALL proc_getAllUsers()";
+            $queryPrepare = ConnectionDAO::getConnexion()->prepare($query);
+            $queryPrepare->execute();
+            $resultDB = $queryPrepare->fetchAll(PDO::FETCH_ASSOC);
+            $queryPrepare->closeCursor();
+            return $resultDB;
+        }catch (Exception $ex){
+            errorManage($ex);
+        }
+    }
 }

@@ -197,7 +197,14 @@
             <!-- user login dropdown start-->
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                    <img alt="" src="imagesAdmin/2.png">
+                    <?php
+                        if($_SESSION['user']['genre'] == "M"){
+                            echo '<img alt="" src="imagesAdmin/avatar_h.jpg">';
+                        }
+                        else{
+                            echo '<img alt="" src="imagesAdmin/avatar_f.jpg">';
+                        }
+                    ?>
                     <span class="username"><?= $_SESSION['user']['username']?></span>
                     <b class="caret"></b>
                 </a>

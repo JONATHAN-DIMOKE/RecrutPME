@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-lg-12">
                         <section class="panel">
                             <header class="panel-heading">
-                                Soumetre besoin en RH
+                                Publier offre
                                 <span class="tools pull-right">
                                 <a class="fa fa-chevron-down" href="javascript:;"></a>
                                 <a class="fa fa-cog" href="javascript:;"></a>
@@ -51,27 +51,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              </span>
                             </header>
                             <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div>
-                                            <form enctype="multipart/form-data" method="post" action="dispatcher.php?action=saveBesoin">
-                                                <div class="row">
-                                                    <input type="hidden" value="<?= $_SESSION['user']['id']?>" name="id" required="" readonly>
-                                                            <div class="col-lg-4">
-                                                            <input type="text" name="titreExpression" placeholder="Titre poste" class="form-control">
-                                                        </div>
-                                                    <input type="hidden" name="MAX_FILE_SIZE" value="50000000000" />
-                                                        <div class="col-lg-4">
-                                                            <input type="file" name="fileExprBesoin" class="form-control">
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <button class="btn btn-primary" type="submit">Valider besoin</button>
-                                                        </div>
-                                                    </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="row" style="padding-top: 10px">
                                     <div class="col-md-12">
                                         <table class="table table-bordered" id="myTable">
@@ -80,20 +59,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <td>N°</td>
                                                 <td>Titre poste</td>
                                                 <td>Fichier description</td>
+                                                <td>Operation</td>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                <?php
-                                                $compteur = 1;
-                                                    foreach ($listBesoins as $besoin){
-                                                        echo "<tr>";
-                                                            echo "<td>".$compteur."</td>";
-                                                            echo "<td>".$besoin['titreExpression']."</td>";
-                                                            echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
-                                                            $compteur++;
-                                                        echo "</tr>";
-                                                    }
-                                                ?>
+                                            <?php
+                                            $compteur = 1;
+                                            foreach ($listBesoins as $besoin){
+                                                echo "<tr>";
+                                                echo "<td>".$compteur."</td>";
+                                                echo "<td>".$besoin['titreExpression']."</td>";
+                                                echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
+                                                echo "<td><a href='dispatcher.php?action=ShowPageCreateOffre&idExprBesoin=".$besoin['id']."&titreOffre=".$besoin['titreExpression']."' class='btn btn-warning'>Create offre</a></td>";
+                                                $compteur++;
+                                                echo "</tr>";
+                                            }
+                                            ?>
                                             </tbody>
                                         </table>
                                     </div>

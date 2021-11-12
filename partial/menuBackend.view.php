@@ -20,8 +20,8 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                         <span>Maintenir comptes</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="typography.html">Activer ou Desactiver </a></li>
-                        <li><a href="glyphicon.html">Consulter etat connection</a></li>
+                        <li><a href="dispatcher.php?action=gererComptesUsers">Gerer comptes utilisateurs</a></li>
+                        <li><a href="dispatcher.php?action=consulterEtatConnectUsers">Consulter etat connection</a></li>
                     </ul>
                 </li>
                 <li>
@@ -107,7 +107,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                     </a>
                 </li>
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="dispatcher.php?action=publierOffre">
                         <i class="fa fa-bullhorn"></i>
                         <span>Publier offre </span>
                     </a>

@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-lg-12">
                         <section class="panel">
                             <header class="panel-heading">
-                                Soumetre besoin en RH
+                                Liste etat connexion utilisateurs
                                 <span class="tools pull-right">
                                 <a class="fa fa-chevron-down" href="javascript:;"></a>
                                 <a class="fa fa-cog" href="javascript:;"></a>
@@ -51,49 +51,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              </span>
                             </header>
                             <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div>
-                                            <form enctype="multipart/form-data" method="post" action="dispatcher.php?action=saveBesoin">
-                                                <div class="row">
-                                                    <input type="hidden" value="<?= $_SESSION['user']['id']?>" name="id" required="" readonly>
-                                                            <div class="col-lg-4">
-                                                            <input type="text" name="titreExpression" placeholder="Titre poste" class="form-control">
-                                                        </div>
-                                                    <input type="hidden" name="MAX_FILE_SIZE" value="50000000000" />
-                                                        <div class="col-lg-4">
-                                                            <input type="file" name="fileExprBesoin" class="form-control">
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <button class="btn btn-primary" type="submit">Valider besoin</button>
-                                                        </div>
-                                                    </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="row" style="padding-top: 10px">
                                     <div class="col-md-12">
                                         <table class="table table-bordered" id="myTable">
                                             <thead>
                                             <tr>
                                                 <td>N°</td>
-                                                <td>Titre poste</td>
-                                                <td>Fichier description</td>
+                                                <td>Nom complet</td>
+                                                <td>Statut compte</td>
+                                                <td>Type utilisateur</td>
+                                                <td>Etat connexion</td>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                <?php
-                                                $compteur = 1;
-                                                    foreach ($listBesoins as $besoin){
-                                                        echo "<tr>";
-                                                            echo "<td>".$compteur."</td>";
-                                                            echo "<td>".$besoin['titreExpression']."</td>";
-                                                            echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
-                                                            $compteur++;
-                                                        echo "</tr>";
-                                                    }
-                                                ?>
+                                            <?php
+                                            $compteur = 1;
+                                            foreach ($listAllUsers as $user){
+                                                echo "<tr>";
+                                                echo "<td>".$compteur."</td>";
+                                                echo "<td>".$user['nomComplet']."</td>";
+                                                echo "<td>".$user['statut']."</td>";
+                                                echo "<td>".$user['typeUser']."</td>";
+                                                if($user['etatConnection'] == "Connected"){
+                                                    echo "<td style='background-color: #0b2e13;color: #F1F2F7'>".$user['etatConnection']."</td>";
+                                                }else{
+                                                    echo "<td style='background-color: #721c24; color: #F1F2F7'>".$user['etatConnection']."</td>";
+                                                }
+
+                                                $compteur++;
+                                                echo "</tr>";
+                                            }
+                                            ?>
                                             </tbody>
                                         </table>
                                     </div>

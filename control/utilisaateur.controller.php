@@ -59,3 +59,20 @@ function showPageExprimerBesoin(){
         errorManage($ex);
     }
 }
+
+function getAllUsers(){
+    try{
+        $listAllUsers = UtilisateurDAO::getAllUser();
+        require "view/backend/consulterEtatConnectUsers.view.php";
+    }catch (Exception $ex){
+        errorManage($ex);
+    }
+}
+function showPageManageAccountsUsers(){
+    try{
+        $listAllUsers = UtilisateurDAO::getAllUser();
+        require "view/backend/gererCompteUsers.view.php";
+    }catch (Exception $ex){
+        errorManage($ex);
+    }
+}

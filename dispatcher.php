@@ -48,6 +48,34 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
             }
             createBesoin($_POST['titreExpression'], $fileExprimerBesoin, $_POST['id']);
         }
+    }elseif ($_GET['action'] == "consulterEtatConnectUsers"){
+        getAllUsers();
+    }elseif ($_GET['action'] == "gererComptesUsers"){
+        showPageManageAccountsUsers();
+    }elseif($_GET['action'] == "telechargerExprBesoin"){
+        downloadExprBesoin();
+    }elseif($_GET['action'] == "publierOffre"){
+        publierOffre();
+    }elseif ($_GET['action'] == "ShowPageCreateOffre"){
+       showPageCreateOffre();
+    }elseif ($_GET['action'] == "createOffre"){
+        $repertoireDestination = "docsOffres/";
+        $fileExprimerBesoin= date("YmdHis")." - ".$_FILES["fileOffre"]["name"];
+        $cheminFileExpresBesoin = pathinfo($fileExprimerBesoin);
+        $extensionFileExprBesoin = $cheminFileExpresBesoin['extension'];
+        $tableauExtesion = array("pdf", "docx");
+        if(!(in_array($extensionFileExprBesoin, $tableauExtesion)) && !(in_array($extensionFileExprBesoin, $tableauExtesion))){
+            echo "L'extension n'est pas attendue";
+        }
+        else {
+            if (is_uploaded_file($_FILES["fileOffre"]["tmp_name"])) {
+                if (rename($_FILES["fileOffre"]["tmp_name"],
+                    $repertoireDestination . $fileExprimerBesoin)
+                ) {
+                }
+            }
+            createOffre($_POST['id'], $_POST['dateFin'],$fileExprimerBesoin);
+        }
     }
 }else{
     accueil();

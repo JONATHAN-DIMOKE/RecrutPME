@@ -31,4 +31,15 @@ class OffreDAO
             errorManage($ex);
         }
     }
+
+    public static function createOffre($idExpBesoin, $dateFin, $fileOffre){
+        try{
+            $query = "CALL createOffre(?, ?, ?)";
+            $queryPrepare = ConnectionDAO::getConnexion()->prepare($query);
+            $queryPrepare->execute(array($idExpBesoin, $dateFin, $fileOffre));
+            $queryPrepare->closeCursor();
+        }catch (Exception $ex){
+            errorManage($ex);
+        }
+    }
 }
