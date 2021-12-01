@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <head>
-    <title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Form_validation :: w3layouts</title>
+    <title>CE Recruitment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -77,9 +77,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <table class="table table-bordered" id="myTable">
                                             <thead>
                                             <tr>
-                                                <td>N°</td>
-                                                <td>Titre poste</td>
-                                                <td>Fichier description</td>
+                                                <th>N°</th>
+                                                <th>Titre poste</th>
+                                                <th>Fichier description</th>
                                             </tr>
                                             </thead>
                                             <tbody>

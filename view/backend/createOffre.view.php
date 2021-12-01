@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <head>
-    <title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Form_validation :: w3layouts</title>
+    <title>CE Recruitment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -58,13 +58,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             <form enctype="multipart/form-data" method="post" action="dispatcher.php?action=createOffre">
                                                 <div class="row">
                                                     <input type="hidden" value="<?= $_SESSION['user']['id']?>" name="id" required="" readonly>
+                                                    <input type="hidden" value="<?= $_GET['idExprBesoin']?>" name="idExprBesoin" required="" readonly>
                                                     <div class="col-lg-12">
                                                         <input type="text" name="titreExpression" readonly value="<?= $_GET['titreOffre']?>" class="form-control">
                                                     </div>
                                                 </div><br>
                                                 <div class="row">
-                                                    <div class="col-lg-12">
+                                                    <div class="col-lg-6">
                                                         <input type="date" name="dateFin" placeholder="Titre poste" class="form-control">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <select name="typeContrat" id="" class="form-control">
+                                                            <option value=""></option>
+                                                            <option value="CDD">CDD</option>
+                                                            <option value="CDI">CDI</option>
+                                                            <option value="Contrat de consultance">Contrat de consultance</option>
+                                                        </select>
                                                     </div>
                                                 </div><br>
                                                 <div class="row">
@@ -82,12 +91,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </div>
                                     <div class="col-md-7">
-                                        <table class="table table-bordered" id="myTable">
+                                        <table summary="Liste etat connexion utilisateurs" class="table table-bordered" id="myTable">
+                                            <strong><caption style="text-align: center"></caption></strong>
                                             <thead>
                                             <tr>
-                                                <td>N°</td>
-                                                <td>Titre poste</td>
-                                                <td>Fichier description</td>
+                                                <th scope="col" id="numero">N°</th>
+                                                <th scope="col" id="titrePoste">Titre poste</th>
+                                                <th scope="col" id="file">Fichier description</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -96,7 +106,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             foreach ($listBesoins as $besoin){
                                                 echo "<tr>";
                                                 echo "<td>".$compteur."</td>";
-                                                echo "<td>".$besoin['titreExpression']."</td>";
+                                                echo "<th scope='col'>".$besoin['titreExpression']."</th>";
                                                 echo "<td><a class='btn btn-primary' href='dispatcher.php?action=telechargerExprBesoin&document=".$besoin['fileExprBesoin']."'>Download</a></td>";
                                                 $compteur++;
                                                 echo "</tr>";

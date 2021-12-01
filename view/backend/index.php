@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <!DOCTYPE html>
 <head>
-<title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>CE Recruitment</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 market-update-gd">
 				<div class="market-update-block clr-block-2">
 					<div class="col-md-4 market-update-right">
-						<i class="fa fa-eye"> </i>
+						<em class="fa fa-eye"> </em>
 					</div>
 					 <div class="col-md-8 market-update-left">
 					 <h4>Viitors</h4>
@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 market-update-gd">
 				<div class="market-update-block clr-block-1">
 					<div class="col-md-4 market-update-right">
-						<i class="fa fa-users" ></i>
+						<em class="fa fa-users" ></em>
 					</div>
 					<div class="col-md-8 market-update-left">
 					<h4>Users</h4>
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 market-update-gd">
 				<div class="market-update-block clr-block-3">
 					<div class="col-md-4 market-update-right">
-						<i class="fa fa-usd"></i>
+						<em class="fa fa-usd"></em>
 					</div>
 					<div class="col-md-8 market-update-left">
 						<h4>Sales</h4>
@@ -88,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 market-update-gd">
 				<div class="market-update-block clr-block-4">
 					<div class="col-md-4 market-update-right">
-						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<em class="fa fa-shopping-cart" aria-hidden="true"></em>
 					</div>
 					<div class="col-md-8 market-update-left">
 						<h4>Orders</h4>

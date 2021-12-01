@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <head>
-    <title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Form_validation :: w3layouts</title>
+    <title>CE Recruitment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -53,14 +53,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="panel-body">
                                 <div class="row" style="padding-top: 10px">
                                     <div class="col-md-12">
-                                        <table class="table table-bordered" id="myTable">
+                                        <table border="1" summary="Liste etat connexion utilisateurs" class="table table-bordered" id="myTable">
+                                            <strong><caption style="text-align: center"></caption></strong>
                                             <thead>
                                             <tr>
                                                 <td>N°</td>
-                                                <td>Nom complet</td>
-                                                <td>Statut compte</td>
-                                                <td>Type utilisateur</td>
-                                                <td>Etat connexion</td>
+                                                <th scope="col" id="nomComplet">Nom complet</th>
+                                                <th scope="col" id="statut">Statut compte</th>
+                                                <th scope="col" id="typeUser">Type utilisateur</th>
+                                                <th scope="col" id="etatConnection">Etat connexion</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -69,7 +70,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             foreach ($listAllUsers as $user){
                                                 echo "<tr>";
                                                 echo "<td>".$compteur."</td>";
-                                                echo "<td>".$user['nomComplet']."</td>";
+                                                echo "<td scope='row'>".$user['nomComplet']."</td>";
                                                 echo "<td>".$user['statut']."</td>";
                                                 echo "<td>".$user['typeUser']."</td>";
                                                 if($user['etatConnection'] == "Connected"){

@@ -76,3 +76,13 @@ function showPageManageAccountsUsers(){
         errorManage($ex);
     }
 }
+
+function approuvCandidature(){
+    try{
+        $listCandidatures = CandidatureDAO::getAllCandidatures();
+        $compteur = 1;
+        require "view/backend/approuverCandidature.view.php";
+    }catch (Exception $ex){
+        errorManage($ex);
+    }
+}

@@ -9,6 +9,7 @@ session_start();
 require "control/lancerFrontend.controller.php";
 require "control/utilisaateur.controller.php";
 require "control/offre.controller.php";
+require "control/candidat.controller.php";
 
 if(isset($_GET['action']) && !empty($_GET['action'])){
     if($_GET['action'] == "accueil"){
@@ -36,7 +37,7 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
         $cheminFileExpresBesoin = pathinfo($fileExprimerBesoin);
         $extensionFileExprBesoin = $cheminFileExpresBesoin['extension'];
         $tableauExtesion = array("pdf", "docx");
-        if(!(in_array($extensionFileExprBesoin, $tableauExtesion)) && !(in_array($extensionFileExprBesoin, $tableauExtesion))){
+        if(!(in_array($extensionFileExprBesoin, $tableauExtesion))){
             echo "L'extension n'est pas attendue";
         }
         else {
@@ -54,27 +55,67 @@ if(isset($_GET['action']) && !empty($_GET['action'])){
         showPageManageAccountsUsers();
     }elseif($_GET['action'] == "telechargerExprBesoin"){
         downloadExprBesoin();
+    }elseif ($_GET['action'] == "telechargerFileDescripOffre"){
+        downloadFileOffre();
     }elseif($_GET['action'] == "publierOffre"){
         publierOffre();
     }elseif ($_GET['action'] == "ShowPageCreateOffre"){
        showPageCreateOffre();
     }elseif ($_GET['action'] == "createOffre"){
         $repertoireDestination = "docsOffres/";
-        $fileExprimerBesoin= date("YmdHis")." - ".$_FILES["fileOffre"]["name"];
-        $cheminFileExpresBesoin = pathinfo($fileExprimerBesoin);
-        $extensionFileExprBesoin = $cheminFileExpresBesoin['extension'];
+        $fileDescriptionOffre= date("YmdHis")." - ".$_FILES["fileOffre"]["name"];
+        $cheminFileDescripOffre = pathinfo($fileDescriptionOffre);
+        $extensionDescripFileOffre = $cheminFileDescripOffre['extension'];
         $tableauExtesion = array("pdf", "docx");
-        if(!(in_array($extensionFileExprBesoin, $tableauExtesion)) && !(in_array($extensionFileExprBesoin, $tableauExtesion))){
+        if(!(in_array($extensionDescripFileOffre, $tableauExtesion))){
             echo "L'extension n'est pas attendue";
         }
         else {
             if (is_uploaded_file($_FILES["fileOffre"]["tmp_name"])) {
                 if (rename($_FILES["fileOffre"]["tmp_name"],
-                    $repertoireDestination . $fileExprimerBesoin)
+                    $repertoireDestination . $fileDescriptionOffre)
                 ) {
                 }
             }
-            createOffre($_POST['id'], $_POST['dateFin'],$fileExprimerBesoin);
+            if(isset($_POST['idExprBesoin'], $_POST['dateFin']) && !empty($_POST['dateFin']) && !empty($_POST['idExprBesoin'])){
+                createOffre($_POST['idExprBesoin'], $_POST['dateFin'],$fileDescriptionOffre, $_POST['typeContrat']);
+            }else{
+                publierOffre();
+            }
+
+        }
+    }elseif ($_GET['action'] == "postulerOffre"){
+        showListOffre();
+    }elseif ($_GET['action'] == "valideApprobation"){
+        if(isset($_GET['idCandidature'], $_GET['operation']) && !empty($_POST['idCandidature']) && !empty($_POST['operation'])){
+            validerApprobation($_GET['idCandidature'], $_GET['operation']);
+        }
+    }elseif ($_GET['action'] == "approuvCandidature"){
+        approuvCandidature();
+    }elseif ($_GET['action'] == "showPostulerOffre"){
+        postulerOffre();
+    }elseif($_GET['action'] == "soumettreCandidature"){
+        $repertoireDestination = "cvCandidat/";
+        $fileDescriptionOffre= date("YmdHis")." - ".$_FILES["cvCandidat"]["name"];
+        $cheminFileDescripOffre = pathinfo($fileDescriptionOffre);
+        $extensionDescripFileOffre = $cheminFileDescripOffre['extension'];
+        $tableauExtesion = array("pdf", "zip");
+        if(!(in_array($extensionDescripFileOffre, $tableauExtesion))){
+            echo "L'extension n'est pas attendue";
+        }
+        else {
+            if (is_uploaded_file($_FILES["cvCandidat"]["tmp_name"])) {
+                if (rename($_FILES["cvCandidat"]["tmp_name"],
+                    $repertoireDestination . $fileDescriptionOffre)
+                ) {
+                }
+            }
+            if(isset($_POST['idCandidat'], $_POST['idOffre']) && !empty($_POST['idCandidat']) && !empty($_POST['idOffre'])){
+                soumettreCandidature($_POST['idCandidat'], $_POST['idOffre'],$fileDescriptionOffre);
+            }else{
+                publierOffre();
+            }
+
         }
     }
 }else{

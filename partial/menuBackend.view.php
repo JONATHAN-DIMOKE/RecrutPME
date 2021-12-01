@@ -25,7 +25,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                     </ul>
                 </li>
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="dispatcher.php?action=approuvCandidature">
                         <i class="fa fa-bullhorn"></i>
                         <span>Approuver candidature </span>
                     </a>
@@ -66,7 +66,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                 </li>
 
                 <li class="sub-menu">
-                    <a href="javascript:;">
+                    <a href="dispatcher.php?action=postulerOffre">
                         <i class="fa fa-book"></i>
                         <span>Postuler offre</span>
                     </a>
@@ -75,7 +75,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                 <li>
                     <a href="fontawesome.html">
                         <i class="fa fa-bullhorn"></i>
-                        <span>Passer offre</span>
+                        <span>Passer test</span>
                     </a>
                 </li>
                
@@ -101,7 +101,7 @@ if($_SESSION['user']['typeUser'] == "Responsable RH"){
                 </li>
 
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="dispatcher.php?action=approuvCandidature">
                         <i class="fa fa-bullhorn"></i>
                         <span>Approuver candidature </span>
                     </a>

@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <head>
-    <title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Form_validation :: w3layouts</title>
+    <title>CE Recruitment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-lg-12">
                         <section class="panel">
                             <header class="panel-heading">
-                                Publier offre
+                                Publier offre | Liste des besoins
                                 <span class="tools pull-right">
                                 <a class="fa fa-chevron-down" href="javascript:;"></a>
                                 <a class="fa fa-cog" href="javascript:;"></a>
@@ -56,10 +56,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <table class="table table-bordered" id="myTable">
                                             <thead>
                                             <tr>
-                                                <td>N°</td>
-                                                <td>Titre poste</td>
-                                                <td>Fichier description</td>
-                                                <td>Operation</td>
+                                                <th>N°</th>
+                                                <th>Titre poste</th>
+                                                <th>Fichier description</th>
+                                                <th>Operation</th>
                                             </tr>
                                             </thead>
                                             <tbody>

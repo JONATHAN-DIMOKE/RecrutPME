@@ -16,7 +16,7 @@
             <!-- settings start -->
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                    <i class="fa fa-tasks"></i>
+                    <em class="fa fa-tasks"></em>
                     <span class="badge bg-success">8</span>
                 </a>
                 <ul class="dropdown-menu extended tasks-bar">
@@ -85,7 +85,7 @@
             <!-- inbox dropdown start-->
             <li id="header_inbox_bar" class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                    <i class="fa fa-envelope-o"></i>
+                    <em class="fa fa-envelope-o"></em>
                     <span class="badge bg-important">4</span>
                 </a>
                 <ul class="dropdown-menu extended inbox">
@@ -150,7 +150,7 @@
             <li id="header_notification_bar" class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
-                    <i class="fa fa-bell-o"></i>
+                    <em class="fa fa-bell-o"></em>
                     <span class="badge bg-warning">3</span>
                 </a>
                 <ul class="dropdown-menu extended notification">
@@ -159,7 +159,7 @@
                     </li>
                     <li>
                         <div class="alert alert-info clearfix">
-                            <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                            <span class="alert-icon"><em class="fa fa-bolt"></em></span>
                             <div class="noti-info">
                                 <a href="#"> Server #1 overloaded.</a>
                             </div>
@@ -167,7 +167,7 @@
                     </li>
                     <li>
                         <div class="alert alert-danger clearfix">
-                            <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                            <span class="alert-icon"><em class="fa fa-bolt"></em></span>
                             <div class="noti-info">
                                 <a href="#"> Server #2 overloaded.</a>
                             </div>
@@ -175,7 +175,7 @@
                     </li>
                     <li>
                         <div class="alert alert-success clearfix">
-                            <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                            <span class="alert-icon"><em class="fa fa-bolt"></em></span>
                             <div class="noti-info">
                                 <a href="#"> Server #3 overloaded.</a>
                             </div>
@@ -206,7 +206,7 @@
                         }
                     ?>
                     <span class="username"><?= $_SESSION['user']['username']?></span>
-                    <b class="caret"></b>
+                    <strong class="caret"></strong>
                 </a>
                 <ul class="dropdown-menu extended logout">
                     <li><a href="#"><em class=" fa fa-suitcase"></em>Profile</a></li>
